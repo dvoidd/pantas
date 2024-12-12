@@ -1,0 +1,43 @@
+  // Future<void> saveData() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   List<String> phData = phPoints.map((point) => point.y.toString()).toList();
+  //   List<String> moistureData =
+  //       moisturePoints.map((point) => point.y.toString()).toList();
+  //   List<String> tempData =
+  //       tempPoints.map((point) => point.y.toString()).toList();
+  //   List<String> humidityData =
+  //       humidityPoints.map((point) => point.y.toString()).toList();
+
+  //   await prefs.setStringList('phPoints', phData);
+  //   await prefs.setStringList('moisturePoints', moistureData);
+  //   await prefs.setStringList('tempPoints', tempData);
+  //   await prefs.setStringList('humidityPoints', humidityData);
+  // }
+
+  // Future<void> loadData() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   List<String>? phData = prefs.getStringList('phPoints');
+  //   List<String>? moistureData = prefs.getStringList('moisturePoints');
+  //   List<String>? tempData = prefs.getStringList('tempPoints');
+  //   List<String>? humidityData = prefs.getStringList('humidityPoints');
+
+  //   if (phData != null) {
+  //     phPoints.addAll(phData.map(
+  //         (value) => FlSpot(phPoints.length.toDouble(), double.parse(value))));
+  //   }
+  //   if (moistureData != null) {
+  //     moisturePoints.addAll(moistureData.map((value) =>
+  //         FlSpot(moisturePoints.length.toDouble(), double.parse(value))));
+  //   }
+  //   if (tempData != null) {
+  //     tempPoints.addAll(tempData.map((value) =>
+  //         FlSpot(tempPoints.length.toDouble(), double.parse(value))));
+  //   }
+  //   if (humidityData != null) {
+  //     humidityPoints.addAll(humidityData.map((value) =>
+  //         FlSpot(humidityPoints.length.toDouble(), double.parse(value))));
+  //   }
+  // }
+
+  saveData();
+  loadData();
